@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+main {
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .login-card {
+  width: 500px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 64px 32px 48px;
+}
+
+main .login-card h1 {
+  text-align: center;
+  margin-bottom: 64px;
+  font-weight: bold;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* FORM */
+
+main .login-card form input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  padding: 16px;
+  font-size: 16px;
+}
+
+main .login-card form input:first-of-type {
+  margin-bottom: 24px;
+}
+
+main .login-card form label {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+main .login-card form .link-container {
+  margin-top: 16px;
+  text-align: right;
+  margin-bottom: 32px;
+}
+
+main .login-card form a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+}
+
+main .login-card form a:hover {
+  color: purple;
+}
+
+main .login-card form button {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* ===================================================== */
+
+/* Sign up */
+
+main .login-card .span-container {
+  text-align: center;
+  margin: 48px 0 32px;
+}
+
+main .login-card .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+main .login-card .social-links a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+
+main .login-card .social-links a:hover {
+  background-color: #333333;
+}
+
+main .login-card .social-links .facebook {
+  background-color: #3b5998;
+}
+
+main .login-card .social-links .twitter {
+  background-color: #1da1f2;
+}
+
+main .login-card .social-links .google {
+  background-color: #ea4335;
+}
+
+.container {
+  padding: 3rem;
+}
+.container h1 {
+  margin-bottom: 1rem;
+}
+
+.tweet {
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.tweet h4 {
+  margin-bottom: 0.5rem;
+}

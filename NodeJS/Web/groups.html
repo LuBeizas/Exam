@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groups</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="groups.js" defer></script>
+  </head>
+  <body>
+    <div class="group-card">
+      <h2>Add Group</h2>
+      <form id="addGroupForm">
+        <label for="groupId">Group ID:</label>
+        <input
+          type="text"
+          name="groupId"
+          id="groupId"
+          placeholder="Enter Group ID"
+          required
+        />
+        <button type="submit">Add Group</button>
+      </form>
+    </div>
+  </body>
+</html>
