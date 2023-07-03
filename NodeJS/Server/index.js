@@ -76,7 +76,7 @@ server.post('/login', async (req, res) => {
         },
         process.env.JWT_SECRET
       );
-      authToken = token; // Store the token in the variable
+      authToken = token;
       return res.status(200).send({ token: authToken, id: data[0].id });
     }
 
@@ -115,7 +115,7 @@ server.post('/register', async (req, res) => {
       },
       process.env.JWT_SECRET
     );
-    authToken = token; // Store the token in the variable
+    authToken = token;
     return res.status(201).json({ token: authToken });
   } catch (error) {
     console.error(error);
