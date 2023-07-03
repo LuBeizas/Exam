@@ -30,7 +30,6 @@ form.addEventListener('submit', async (event) => {
 
   const userData = await onRegisterUser(payload);
   if (userData.token) {
-    // document.cookie = `token=${userData.token};`;
     Cookies.set('token', userData.token, { expires: 0.1 });
     window.location.replace('./login.html');
   }

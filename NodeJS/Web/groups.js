@@ -19,11 +19,8 @@ addGroupForm.addEventListener('submit', async (event) => {
     });
 
     if (response.ok) {
-      // Group added successfully
-      // Perform any necessary actions, such as updating UI
       console.log('Group added successfully');
     } else {
-      // Handle the error
       const errorData = await response.json();
       console.error(errorData.error);
     }
